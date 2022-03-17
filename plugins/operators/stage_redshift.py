@@ -68,7 +68,7 @@ class StageToRedshiftOperator(BaseOperator):
         """
         Purpose:
             Truncate and copy data from s3 to Redshift after access Redshift.
-        :param context:
+        :param context: to read config values
         :return: None
         """
 

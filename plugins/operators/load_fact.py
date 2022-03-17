@@ -1,7 +1,7 @@
 from airflow.models import BaseOperator
 from airflow.providers.postgres.operators.postgres import PostgresHook
 
-
+# from helpers.sql_queries import SqlQueries
 
 class LoadFactOperator(BaseOperator):
     """
@@ -26,6 +26,9 @@ class LoadFactOperator(BaseOperator):
     # Setting the task background color
     # RPG: 249, 136, 102 -> Orange
     ui_color = '#F98866'
+    
+    # template_fields
+    template_fields = ("column_name", "sql_statement",)
 
     truncate_table = \
         """
@@ -34,17 +37,16 @@ class LoadFactOperator(BaseOperator):
 
     insert_table = \
         """
-        INSERT INTO "{redshift_schema}"."{table_name}" "{(column_name)}"\n
-        "{source_sql_statemnet}"
+        INSERT INTO "{redshift_schema}"."{table_name}" ({column_name})\n {source_sql_statemnet}
         """
 
-    def __init__(self, 
+    def __init__(self,
                  *,
                  redshift_conn_id: str = "",
                  table_name: str = "",
                  column_name: str = "",
                  sql_statement: str = "",
-                 redshift_schema: str = "",
+                 redshift_schema: str = "public",
                  is_truncate_table: bool = False,
                  **kwargs) -> None:
         super().__init__(**kwargs)
@@ -67,15 +69,15 @@ class LoadFactOperator(BaseOperator):
 
         redshift_hook = PostgresHook(postgres_conn_id=self.redshift_conn_id)
 
-        self.load_songplays_fact_table(redshift_hook)
+        self.load_songplays_fact_table(redshift_hook, context)
 
-    def load_songplays_fact_table(self, redshift_hook) -> None:
+    def load_songplays_fact_table(self, redshift_hook, context) -> None:
         """
         Purpose:
             1. Loading data from stage table
                 - stage table: stage_event, stage_song
             2. truncate_table parameter default is false
-                - if it's passed a True parameter, then execute truncate table sql statement.
+                - if it's passed a True parameter, then executed truncate_table sql statement.
         :param redshift_hook: access Redshift by PostgresHook
         :return: None
         """
@@ -90,14 +92,16 @@ class LoadFactOperator(BaseOperator):
             redshift_hook.run(truncate_fact_table)
 
         # Insert into data
-        #     condition 1: self.truncate_table is True
-        # Log information
         self.log.info(f"Starting to insert {self.table_name}")
+
+        column_name_render = self.column_name.format(**context)
+        sql_statement_render = self.sql_statement.format(**context)
+
         # Execute insert table
         insert_fact_data = LoadFactOperator.insert_table.format(
             redshift_schema=self.redshift_schema,
             table_name=self.table_name,
-            column_name=self.column_name,
-            source_sql_statemnet=self.sql_statement
+            column_name=column_name_render,
+            source_sql_statemnet=sql_statement_render
         )
         redshift_hook.run(insert_fact_data)

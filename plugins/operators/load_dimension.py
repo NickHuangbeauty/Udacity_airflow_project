@@ -24,6 +24,8 @@ class LoadDimensionOperator(BaseOperator):
     # Setting the task background color
     # RPG: 128, 189, 158 -> Green
     ui_color = '#80BD9E'
+    
+    template_fields = ("column_name", "sql_statement",)
 
     truncate_table = \
         """
@@ -32,8 +34,7 @@ class LoadDimensionOperator(BaseOperator):
 
     insert_table = \
         """
-        INSERT INTO "{redshift_schema}"."{table_name}" "{(column_name)}"\n
-        "{source_sql_statemnet}"
+        INSERT INTO "{redshift_schema}"."{table_name}" ({column_name})\n {source_sql_statemnet}
         """
 
     def __init__(self,
@@ -63,9 +64,9 @@ class LoadDimensionOperator(BaseOperator):
         """
         redshift_hook = PostgresHook(postgres_conn_id=self.redshift_conn_id)
 
-        self.load_dimension_table(redshift_hook)
+        self.load_dimension_table(redshift_hook, context)
 
-    def load_dimension_table(self, redshift_hook) -> None:
+    def load_dimension_table(self, redshift_hook, context) -> None:
         """
         Purpose:
             1. Loading data from stage and fact table
@@ -88,14 +89,16 @@ class LoadDimensionOperator(BaseOperator):
             redshift_hook.run(truncate_dimension_table)
 
         # Inert into data
-        #     condition 1: self.truncate_table is True
         # Log information
         self.log.info(f"Starting to insert {self.table_name}")
+
+        column_name_render = self.column_name.format(**context)
+        sql_statement_render = self.sql_statement.format(**context)
         # Execute insert table
         insert_dimension_data = LoadDimensionOperator.insert_table.format(
             redshift_schema=self.redshift_schema,
             table_name=self.table_name,
-            column_name=self.column_name,
-            source_sql_statemnet=self.sql_statement
+            column_name=column_name_render,
+            source_sql_statemnet=sql_statement_render
         )
         redshift_hook.run(insert_dimension_data)

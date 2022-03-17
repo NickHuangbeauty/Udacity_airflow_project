@@ -1,0 +1,74 @@
+[2022-03-17 19:01:16,723] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: udac_example_dag.Run_data_quality_checks manual__2022-03-17T10:55:16.566780+00:00 [queued]>
+[2022-03-17 19:01:16,735] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: udac_example_dag.Run_data_quality_checks manual__2022-03-17T10:55:16.566780+00:00 [queued]>
+[2022-03-17 19:01:16,735] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-17 19:01:16,735] {taskinstance.py:1244} INFO - Starting attempt 1 of 3
+[2022-03-17 19:01:16,736] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-17 19:01:16,744] {taskinstance.py:1264} INFO - Executing <Task(DataQualityOperator): Run_data_quality_checks> on 2022-03-17 10:55:16.566780+00:00
+[2022-03-17 19:01:16,746] {standard_task_runner.py:52} INFO - Started process 42603 to run task
+[2022-03-17 19:01:16,751] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'udac_example_dag', 'Run_data_quality_checks', 'manual__2022-03-17T10:55:16.566780+00:00', '--job-id', '169', '--raw', '--subdir', 'DAGS_FOLDER/udac_example_dag.py', '--cfg-path', '/var/folders/lh/ngst1lt51m9_gyz7qrg2f3nh0000gn/T/tmpahvr61i6', '--error-file', '/var/folders/lh/ngst1lt51m9_gyz7qrg2f3nh0000gn/T/tmpbvy9tmgk']
+[2022-03-17 19:01:16,753] {standard_task_runner.py:77} INFO - Job 169: Subtask Run_data_quality_checks
+[2022-03-17 19:01:16,809] {logging_mixin.py:109} INFO - Running <TaskInstance: udac_example_dag.Run_data_quality_checks manual__2022-03-17T10:55:16.566780+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-03-17 19:01:16,863] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=udacity
+AIRFLOW_CTX_DAG_ID=udac_example_dag
+AIRFLOW_CTX_TASK_ID=Run_data_quality_checks
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-17T10:55:16.566780+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-17T10:55:16.566780+00:00
+[2022-03-17 19:01:16,864] {data_quality.py:44} INFO - Starting to access Redshift
+[2022-03-17 19:01:16,864] {data_quality.py:47} INFO - Starting to data quality check
+[2022-03-17 19:01:16,865] {connection.py:404} ERROR - Unable to retrieve connection from secrets backend (EnvironmentVariablesBackend). Checking subsequent secrets backend.
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/models/connection.py", line 400, in get_connection_from_secrets
+    conn = secrets_backend.get_connection(conn_id=conn_id)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/secrets/base_secrets.py", line 64, in get_connection
+    conn_uri = self.get_conn_uri(conn_id=conn_id)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/secrets/environment_variables.py", line 33, in get_conn_uri
+    environment_uri = os.environ.get(CONN_ENV_PREFIX + conn_id.upper())
+AttributeError: 'tuple' object has no attribute 'upper'
+[2022-03-17 19:01:16,876] {base.py:70} INFO - Using connection to: id: redshift. Host: redshift-cluster-1.cvmsgkpkbsh2.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: ***, extra: {}
+[2022-03-17 19:01:18,597] {connection.py:404} ERROR - Unable to retrieve connection from secrets backend (EnvironmentVariablesBackend). Checking subsequent secrets backend.
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/models/connection.py", line 400, in get_connection_from_secrets
+    conn = secrets_backend.get_connection(conn_id=conn_id)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/secrets/base_secrets.py", line 64, in get_connection
+    conn_uri = self.get_conn_uri(conn_id=conn_id)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/secrets/environment_variables.py", line 33, in get_conn_uri
+    environment_uri = os.environ.get(CONN_ENV_PREFIX + conn_id.upper())
+AttributeError: 'tuple' object has no attribute 'upper'
+[2022-03-17 19:01:18,606] {base.py:70} INFO - Using connection to: id: redshift. Host: redshift-cluster-1.cvmsgkpkbsh2.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: ***, extra: {}
+[2022-03-17 19:01:20,223] {connection.py:404} ERROR - Unable to retrieve connection from secrets backend (EnvironmentVariablesBackend). Checking subsequent secrets backend.
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/models/connection.py", line 400, in get_connection_from_secrets
+    conn = secrets_backend.get_connection(conn_id=conn_id)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/secrets/base_secrets.py", line 64, in get_connection
+    conn_uri = self.get_conn_uri(conn_id=conn_id)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/secrets/environment_variables.py", line 33, in get_conn_uri
+    environment_uri = os.environ.get(CONN_ENV_PREFIX + conn_id.upper())
+AttributeError: 'tuple' object has no attribute 'upper'
+[2022-03-17 19:01:20,231] {base.py:70} INFO - Using connection to: id: redshift. Host: redshift-cluster-1.cvmsgkpkbsh2.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: ***, extra: {}
+[2022-03-17 19:01:21,885] {connection.py:404} ERROR - Unable to retrieve connection from secrets backend (EnvironmentVariablesBackend). Checking subsequent secrets backend.
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/models/connection.py", line 400, in get_connection_from_secrets
+    conn = secrets_backend.get_connection(conn_id=conn_id)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/secrets/base_secrets.py", line 64, in get_connection
+    conn_uri = self.get_conn_uri(conn_id=conn_id)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/secrets/environment_variables.py", line 33, in get_conn_uri
+    environment_uri = os.environ.get(CONN_ENV_PREFIX + conn_id.upper())
+AttributeError: 'tuple' object has no attribute 'upper'
+[2022-03-17 19:01:21,894] {base.py:70} INFO - Using connection to: id: redshift. Host: redshift-cluster-1.cvmsgkpkbsh2.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: ***, extra: {}
+[2022-03-17 19:01:23,612] {connection.py:404} ERROR - Unable to retrieve connection from secrets backend (EnvironmentVariablesBackend). Checking subsequent secrets backend.
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/models/connection.py", line 400, in get_connection_from_secrets
+    conn = secrets_backend.get_connection(conn_id=conn_id)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/secrets/base_secrets.py", line 64, in get_connection
+    conn_uri = self.get_conn_uri(conn_id=conn_id)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/secrets/environment_variables.py", line 33, in get_conn_uri
+    environment_uri = os.environ.get(CONN_ENV_PREFIX + conn_id.upper())
+AttributeError: 'tuple' object has no attribute 'upper'
+[2022-03-17 19:01:23,621] {base.py:70} INFO - Using connection to: id: redshift. Host: redshift-cluster-1.cvmsgkpkbsh2.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: ***, extra: {}
+[2022-03-17 19:01:25,277] {data_quality.py:71} INFO - Check data quality: [{'query': 'SELECT count(*) FROM songplays', 'expected_result': '[(6820,)]'}, {'query': 'SELECT count(*) FROM songs', 'expected_result': '[(14896,)]'}, {'query': 'SELECT count(*) FROM users', 'expected_result': '[(104,)]'}, {'query': 'SELECT count(*) FROM artists', 'expected_result': '[(10025,)]'}, {'query': 'SELECT count(*) FROM time', 'expected_result': '[(6820,)]'}]
+[2022-03-17 19:01:25,290] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=udac_example_dag, task_id=Run_data_quality_checks, execution_date=20220317T105516, start_date=20220317T110116, end_date=20220317T110125
+[2022-03-17 19:01:25,336] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-17 19:01:25,373] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

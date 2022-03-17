@@ -1,0 +1,87 @@
+[2022-03-17 13:44:24,338] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: udac_example_dag.load_songplays_fact_table manual__2022-03-17T05:30:10.336355+00:00 [queued]>
+[2022-03-17 13:44:24,347] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: udac_example_dag.load_songplays_fact_table manual__2022-03-17T05:30:10.336355+00:00 [queued]>
+[2022-03-17 13:44:24,348] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-17 13:44:24,349] {taskinstance.py:1244} INFO - Starting attempt 2 of 3
+[2022-03-17 13:44:24,351] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-17 13:44:24,363] {taskinstance.py:1264} INFO - Executing <Task(LoadFactOperator): load_songplays_fact_table> on 2022-03-17 05:30:10.336355+00:00
+[2022-03-17 13:44:24,365] {standard_task_runner.py:52} INFO - Started process 1608 to run task
+[2022-03-17 13:44:24,371] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'udac_example_dag', 'load_songplays_fact_table', 'manual__2022-03-17T05:30:10.336355+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/udac_example_dag.py', '--cfg-path', '/var/folders/lh/ngst1lt51m9_gyz7qrg2f3nh0000gn/T/tmpd8202eds', '--error-file', '/var/folders/lh/ngst1lt51m9_gyz7qrg2f3nh0000gn/T/tmp_7xdgz2y']
+[2022-03-17 13:44:24,375] {standard_task_runner.py:77} INFO - Job 19: Subtask load_songplays_fact_table
+[2022-03-17 13:44:24,439] {logging_mixin.py:109} INFO - Running <TaskInstance: udac_example_dag.load_songplays_fact_table manual__2022-03-17T05:30:10.336355+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-03-17 13:44:24,487] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=udacity
+AIRFLOW_CTX_DAG_ID=udac_example_dag
+AIRFLOW_CTX_TASK_ID=load_songplays_fact_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-17T05:30:10.336355+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-17T05:30:10.336355+00:00
+[2022-03-17 13:44:24,487] {load_fact.py:84} INFO - Starting to truncate songplays
+[2022-03-17 13:44:24,496] {base.py:70} INFO - Using connection to: id: redshift. Host: redshift-cluster-1.cvmsgkpkbsh2.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: ***, extra: {}
+[2022-03-17 13:44:26,757] {dbapi.py:225} INFO - Running statement: 
+        TRUNCATE TABLE "public"."songplays"
+        , parameters: None
+[2022-03-17 13:44:27,717] {load_fact.py:93} INFO - Starting to insert songplays
+[2022-03-17 13:44:27,724] {base.py:70} INFO - Using connection to: id: redshift. Host: redshift-cluster-1.cvmsgkpkbsh2.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: ***, extra: {}
+[2022-03-17 13:44:29,037] {dbapi.py:225} INFO - Running statement: 
+        INSERT INTO "public"."songplays" (playid, start_time, userid, level, songid, artistid, sessionid, location, user_agent)
+
+        "<class 'helpers.sql_queries.SqlQueries'>.songplays_table_insert"
+        , parameters: None
+[2022-03-17 13:44:29,520] {taskinstance.py:1718} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/Users/oneforall_nick/workspace/airflow/plugins/operators/load_fact.py", line 70, in execute
+    self.load_songplays_fact_table(redshift_hook)
+  File "/Users/oneforall_nick/workspace/airflow/plugins/operators/load_fact.py", line 101, in load_songplays_fact_table
+    redshift_hook.run(insert_fact_data)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/hooks/dbapi.py", line 205, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/hooks/dbapi.py", line 229, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.SyntaxError: syntax error at or near ""<class 'helpers.sql_queries.SqlQueries'>.songplays_table_insert""
+LINE 4:         "<class 'helpers.sql_queries.SqlQueries'>.songplays_...
+                ^
+
+[2022-03-17 13:44:29,535] {taskinstance.py:1272} INFO - Marking task as UP_FOR_RETRY. dag_id=udac_example_dag, task_id=load_songplays_fact_table, execution_date=20220317T053010, start_date=20220317T054424, end_date=20220317T054429
+[2022-03-17 13:44:29,546] {standard_task_runner.py:89} ERROR - Failed to execute job 19 for task load_songplays_fact_table
+Traceback (most recent call last):
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1334, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1460, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1516, in _execute_task
+    result = execute_callable(context=context)
+  File "/Users/oneforall_nick/workspace/airflow/plugins/operators/load_fact.py", line 70, in execute
+    self.load_songplays_fact_table(redshift_hook)
+  File "/Users/oneforall_nick/workspace/airflow/plugins/operators/load_fact.py", line 101, in load_songplays_fact_table
+    redshift_hook.run(insert_fact_data)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/hooks/dbapi.py", line 205, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/usr/local/anaconda3/envs/data_pipeline/lib/python3.8/site-packages/airflow/hooks/dbapi.py", line 229, in _run_command
+    cur.execute(sql_statement)
+psycopg2.errors.SyntaxError: syntax error at or near ""<class 'helpers.sql_queries.SqlQueries'>.songplays_table_insert""
+LINE 4:         "<class 'helpers.sql_queries.SqlQueries'>.songplays_...
+                ^
+
+[2022-03-17 13:44:29,561] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-03-17 13:44:29,591] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
