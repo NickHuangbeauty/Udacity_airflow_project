@@ -34337,3 +34337,418 @@ File Path                                                  PID  Runtime      # D
 [2022-03-19 23:56:28,624] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:51:28.624550+00:00
 [2022-03-19 23:56:28,788] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
 [2022-03-19 23:56:30,707] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:32,628] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:34,585] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:36,592] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:37,813] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  60471  1.22s             0          -1  2.01s           2022-03-19T15:56:36
+================================================================================
+[2022-03-19 23:56:38,522] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:38,816] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:56:38,816] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:51:38.816599+00:00
+[2022-03-19 23:56:40,405] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:42,292] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:44,222] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:46,046] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:47,826] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:48,832] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:56:48,832] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:51:48.832861+00:00
+[2022-03-19 23:56:49,646] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:51,432] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:53,242] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:55,032] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:56,807] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:58,575] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:56:59,259] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:56:59,259] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:51:59.259719+00:00
+[2022-03-19 23:57:00,441] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:02,294] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:04,070] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:05,839] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:07,606] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:08,313] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  60621  0.71s             0          -1  1.77s           2022-03-19T15:57:07
+================================================================================
+[2022-03-19 23:57:09,315] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:57:09,315] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:52:09.315536+00:00
+[2022-03-19 23:57:09,423] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:11,240] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:13,005] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:14,783] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:16,552] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:18,378] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:19,383] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:57:19,384] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:52:19.384272+00:00
+[2022-03-19 23:57:20,197] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:21,950] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:23,774] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:25,617] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:27,385] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:29,164] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:29,629] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:57:29,629] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:52:29.629643+00:00
+[2022-03-19 23:57:31,055] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:32,862] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:34,790] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:36,728] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:38,659] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  60781  1.93s             0          -1  1.94s           2022-03-19T15:57:36
+================================================================================
+[2022-03-19 23:57:38,993] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:39,738] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:57:39,738] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:52:39.738481+00:00
+[2022-03-19 23:57:41,038] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:43,004] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:44,919] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:46,803] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:48,595] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:50,064] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:57:50,064] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:52:50.064412+00:00
+[2022-03-19 23:57:50,362] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:52,097] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:53,078] {manager.py:663} INFO - Searching for files in /Users/oneforall_nick/workspace/airflow/dags
+[2022-03-19 23:57:53,080] {manager.py:666} INFO - There are 1 files in /Users/oneforall_nick/workspace/airflow/dags
+[2022-03-19 23:57:53,840] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:55,584] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:57,311] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:57:59,060] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:00,321] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:58:00,322] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:53:00.322059+00:00
+[2022-03-19 23:58:00,797] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:02,530] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:04,262] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:06,172] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:08,024] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:09,031] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  60825  1.01s             0          -1  1.85s           2022-03-19T15:58:08
+================================================================================
+[2022-03-19 23:58:09,903] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:10,549] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:58:10,550] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:53:10.550404+00:00
+[2022-03-19 23:58:11,791] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:13,592] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:15,375] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:17,326] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:19,468] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:21,338] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:58:21,338] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:53:21.338970+00:00
+[2022-03-19 23:58:21,627] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:23,748] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:25,740] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:27,842] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:29,918] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:31,853] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:58:31,854] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:53:31.854040+00:00
+[2022-03-19 23:58:31,898] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:33,956] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:36,009] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:38,051] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:39,058] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  60869  1.01s             0          -1  2.04s           2022-03-19T15:58:38
+================================================================================
+[2022-03-19 23:58:39,912] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:41,808] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:42,069] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:58:42,070] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:53:42.070253+00:00
+[2022-03-19 23:58:43,723] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:45,556] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:47,415] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:49,253] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:51,057] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:52,263] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:58:52,264] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:53:52.264257+00:00
+[2022-03-19 23:58:52,936] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:54,812] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:56,638] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:58:58,461] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:00,329] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:02,173] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:02,337] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:59:02,337] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:54:02.337451+00:00
+[2022-03-19 23:59:03,921] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:05,648] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:07,374] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:09,106] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:09,112] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  60912  0.00s             0          -1  1.73s           2022-03-19T15:59:09
+================================================================================
+[2022-03-19 23:59:10,848] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:12,388] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:59:12,388] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:54:12.388554+00:00
+[2022-03-19 23:59:12,575] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:14,396] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:16,131] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:17,853] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:19,591] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:21,326] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:22,869] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:59:22,870] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:54:22.870005+00:00
+[2022-03-19 23:59:23,061] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:24,794] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:26,520] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:28,244] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:29,989] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:31,835] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:33,258] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:59:33,258] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:54:33.258376+00:00
+[2022-03-19 23:59:33,716] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:35,526] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:37,390] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:39,261] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:39,267] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  60951  0.00s             0          -1  1.87s           2022-03-19T15:59:39
+================================================================================
+[2022-03-19 23:59:41,070] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:42,855] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:43,406] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:59:43,407] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:54:43.407129+00:00
+[2022-03-19 23:59:44,645] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:46,429] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:48,214] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:50,018] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:51,816] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:53,448] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-19 23:59:53,448] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:54:53.448611+00:00
+[2022-03-19 23:59:53,619] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:55,434] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:57,331] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-19 23:59:59,244] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:01,630] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:03,637] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:00:03,638] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:55:03.638082+00:00
+[2022-03-20 00:00:03,825] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:05,915] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:07,826] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:09,652] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:09,658] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  61003  0.00s             0          -1  1.82s           2022-03-19T16:00:09
+================================================================================
+[2022-03-20 00:00:11,567] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:13,468] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:13,934] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:00:13,934] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:55:13.934692+00:00
+[2022-03-20 00:00:15,312] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:17,166] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:19,033] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:20,920] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:22,840] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:24,048] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:00:24,049] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:55:24.049214+00:00
+[2022-03-20 00:00:24,736] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:26,511] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:28,381] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:30,199] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:32,002] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:33,869] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:34,212] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:00:34,212] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:55:34.212616+00:00
+[2022-03-20 00:00:35,694] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:37,425] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:39,172] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:40,179] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  61043  1.00s             0          -1  1.75s           2022-03-19T16:00:39
+================================================================================
+[2022-03-20 00:00:40,934] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:42,836] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:44,443] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:00:44,444] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:55:44.444248+00:00
+[2022-03-20 00:00:44,752] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:46,585] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:48,366] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:50,215] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:52,127] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:54,132] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:54,605] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:00:54,606] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:55:54.606086+00:00
+[2022-03-20 00:00:56,125] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:57,885] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:00:59,632] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:01,444] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:03,277] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:04,647] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:01:04,648] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:56:04.648029+00:00
+[2022-03-20 00:01:05,089] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:07,009] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:08,859] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:10,670] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  61087  1.81s             0          -1  1.85s           2022-03-19T16:01:08
+================================================================================
+[2022-03-20 00:01:10,699] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:12,552] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:14,385] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:14,711] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:01:14,711] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:56:14.711812+00:00
+[2022-03-20 00:01:16,169] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:18,554] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:20,600] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:22,782] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:24,702] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:25,613] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:01:25,614] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:56:25.614113+00:00
+[2022-03-20 00:01:26,533] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:28,409] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:30,262] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:32,131] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:34,001] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:35,728] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:01:35,728] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:56:35.728646+00:00
+[2022-03-20 00:01:35,862] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:37,770] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:39,579] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:40,782] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  61129  1.20s             0          -1  1.81s           2022-03-19T16:01:39
+================================================================================
+[2022-03-20 00:01:41,406] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:43,343] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:45,521] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:46,352] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:01:46,353] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:56:46.353577+00:00
+[2022-03-20 00:01:47,596] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:49,492] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:51,326] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:53,140] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:55,013] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:56,621] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:01:56,622] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:56:56.622070+00:00
+[2022-03-20 00:01:56,980] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:01:59,072] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:01,085] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:03,084] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:04,945] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:06,699] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:06,700] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:02:06,700] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:57:06.700176+00:00
+[2022-03-20 00:02:08,498] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:10,515] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:11,509] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  61171  0.99s             0          -1  2.02s           2022-03-19T16:02:10
+================================================================================
+[2022-03-20 00:02:12,493] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:14,267] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:16,004] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:17,009] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:02:17,009] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:57:17.009375+00:00
+[2022-03-20 00:02:17,747] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:19,482] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:21,245] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:22,987] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:24,729] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:26,461] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:27,466] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:02:27,466] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:57:27.466980+00:00
+[2022-03-20 00:02:28,491] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:30,529] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:32,541] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:34,514] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:36,404] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:37,555] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:02:37,556] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:57:37.556045+00:00
+[2022-03-20 00:02:38,451] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:40,523] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:41,528] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  61246  1.00s             0          -1  2.07s           2022-03-19T16:02:40
+================================================================================
+[2022-03-20 00:02:42,523] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:44,381] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:46,162] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:48,169] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:02:48,171] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:57:48.171212+00:00
+[2022-03-20 00:02:48,312] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:50,285] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:52,167] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:53,171] {manager.py:663} INFO - Searching for files in /Users/oneforall_nick/workspace/airflow/dags
+[2022-03-20 00:02:53,173] {manager.py:666} INFO - There are 1 files in /Users/oneforall_nick/workspace/airflow/dags
+[2022-03-20 00:02:54,116] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:56,949] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:02:58,313] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:02:58,314] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:57:58.314254+00:00
+[2022-03-20 00:02:59,184] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:01,416] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:04,118] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:06,432] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:08,433] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:03:08,434] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:58:08.434910+00:00
+[2022-03-20 00:03:08,513] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:10,421] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:12,297] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:12,303] {manager.py:784} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                  PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/oneforall_nick/workspace/airflow/dags/udac_v1.py  61359  0.00s             0          -1  1.87s           2022-03-19T16:03:12
+================================================================================
+[2022-03-20 00:03:14,178] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:15,973] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:17,748] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:18,538] {manager.py:1065} INFO - Finding 'running' jobs without a recent heartbeat
+[2022-03-20 00:03:18,539] {manager.py:1069} INFO - Failing jobs without heartbeat after 2022-03-19 15:58:18.539106+00:00
+[2022-03-20 00:03:19,735] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:21,549] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
+[2022-03-20 00:03:23,390] {manager.py:907} ERROR - Processor for /Users/oneforall_nick/workspace/airflow/dags/udac_v1.py exited with return code 1.
