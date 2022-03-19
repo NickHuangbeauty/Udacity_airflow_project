@@ -13,8 +13,8 @@ class LoadFactOperator(BaseOperator):
     :type redshift_conn_id      str
     :param table_name           fact table name
     :type table_name            str
-    :param column_name          column name of fact table
-    :type column_name           str
+    :param column_names         column name of fact table
+    :type column_names          str
     :param sql_statement        insert into sql statement
     :type sql_statement         str
     :param redshift_schema      default is public
@@ -28,7 +28,7 @@ class LoadFactOperator(BaseOperator):
     ui_color = '#F98866'
     
     # template_fields
-    template_fields = ("column_name", "sql_statement",)
+    template_fields = ("sql_statement", )
 
     truncate_table = \
         """
@@ -37,14 +37,14 @@ class LoadFactOperator(BaseOperator):
 
     insert_table = \
         """
-        INSERT INTO "{redshift_schema}"."{table_name}" ({column_name})\n {source_sql_statemnet}
+        INSERT INTO "{redshift_schema}"."{table_name}" ({column_names})\n {source_sql_statemnet}
         """
 
     def __init__(self,
                  *,
                  redshift_conn_id: str = "",
                  table_name: str = "",
-                 column_name: str = "",
+                 column_names: str = "",
                  sql_statement: str = "",
                  redshift_schema: str = "public",
                  is_truncate_table: bool = False,
@@ -52,7 +52,7 @@ class LoadFactOperator(BaseOperator):
         super().__init__(**kwargs)
         self.redshift_conn_id = redshift_conn_id
         self.table_name = table_name
-        self.column_name = column_name
+        self.column_names = column_names
         self.sql_statement = sql_statement
         self.redshift_schema = redshift_schema
         self.is_truncate_table = is_truncate_table
@@ -93,15 +93,14 @@ class LoadFactOperator(BaseOperator):
 
         # Insert into data
         self.log.info(f"Starting to insert {self.table_name}")
-
-        column_name_render = self.column_name.format(**context)
+        
         sql_statement_render = self.sql_statement.format(**context)
 
         # Execute insert table
         insert_fact_data = LoadFactOperator.insert_table.format(
             redshift_schema=self.redshift_schema,
             table_name=self.table_name,
-            column_name=column_name_render,
+            column_names=self.column_names[0],
             source_sql_statemnet=sql_statement_render
         )
         redshift_hook.run(insert_fact_data)

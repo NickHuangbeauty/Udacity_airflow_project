@@ -12,8 +12,8 @@ class LoadDimensionOperator(BaseOperator):
     :type redshift_conn_id    str
     :param table_name         four dimension tables: songs, time, users, artise
     :type table_name          str
-    :param column_name        each of dimension table's columns
-    :type column_name         str
+    :param column_names       each of dimension table's columns
+    :type column_names        str
     :param sql_statement      for inserting  into
     :type sql_statement       str
     :param redshift_schema    Redshift schema: public (default)
@@ -24,8 +24,8 @@ class LoadDimensionOperator(BaseOperator):
     # Setting the task background color
     # RPG: 128, 189, 158 -> Green
     ui_color = '#80BD9E'
-    
-    template_fields = ("column_name", "sql_statement",)
+
+    template_fields = ("sql_statement",)
 
     truncate_table = \
         """
@@ -34,14 +34,14 @@ class LoadDimensionOperator(BaseOperator):
 
     insert_table = \
         """
-        INSERT INTO "{redshift_schema}"."{table_name}" ({column_name})\n {source_sql_statemnet}
+        INSERT INTO "{redshift_schema}"."{table_name}" ({column_names})\n {source_sql_statemnet}
         """
 
     def __init__(self,
                  *,
                  redshift_conn_id: str = "",
                  table_name: str = "",
-                 column_name: str = "",
+                 column_names: str = "",
                  sql_statement: str = "",
                  redshift_schema: str = "",
                  is_truncate_table: bool = False,
@@ -49,7 +49,7 @@ class LoadDimensionOperator(BaseOperator):
         super().__init__(**kwargs)
         self.redshift_conn_id = redshift_conn_id
         self.table_name = table_name
-        self.column_name = column_name
+        self.column_names = column_names
         self.sql_statement = sql_statement
         self.redshift_schema = redshift_schema
         self.is_truncate_table = is_truncate_table
@@ -92,13 +92,13 @@ class LoadDimensionOperator(BaseOperator):
         # Log information
         self.log.info(f"Starting to insert {self.table_name}")
 
-        column_name_render = self.column_name.format(**context)
         sql_statement_render = self.sql_statement.format(**context)
+        
         # Execute insert table
         insert_dimension_data = LoadDimensionOperator.insert_table.format(
             redshift_schema=self.redshift_schema,
             table_name=self.table_name,
-            column_name=column_name_render,
+            column_names=self.column_names[0],
             source_sql_statemnet=sql_statement_render
         )
         redshift_hook.run(insert_dimension_data)

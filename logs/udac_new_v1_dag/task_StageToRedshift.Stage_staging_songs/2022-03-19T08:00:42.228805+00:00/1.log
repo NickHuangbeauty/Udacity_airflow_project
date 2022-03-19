@@ -1,0 +1,53 @@
+[2022-03-19 16:19:25,745] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: udac_new_v1_dag.task_StageToRedshift.Stage_staging_songs manual__2022-03-19T08:00:42.228805+00:00 [queued]>
+[2022-03-19 16:19:25,755] {taskinstance.py:1037} INFO - Dependencies all met for <TaskInstance: udac_new_v1_dag.task_StageToRedshift.Stage_staging_songs manual__2022-03-19T08:00:42.228805+00:00 [queued]>
+[2022-03-19 16:19:25,755] {taskinstance.py:1243} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-19 16:19:25,756] {taskinstance.py:1244} INFO - Starting attempt 1 of 4
+[2022-03-19 16:19:25,756] {taskinstance.py:1245} INFO - 
+--------------------------------------------------------------------------------
+[2022-03-19 16:19:25,766] {taskinstance.py:1264} INFO - Executing <Task(StageToRedshiftOperator): task_StageToRedshift.Stage_staging_songs> on 2022-03-19 08:00:42.228805+00:00
+[2022-03-19 16:19:25,769] {standard_task_runner.py:52} INFO - Started process 20861 to run task
+[2022-03-19 16:19:25,775] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'udac_new_v1_dag', 'task_StageToRedshift.Stage_staging_songs', 'manual__2022-03-19T08:00:42.228805+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/udac_v1.py', '--cfg-path', '/var/folders/lh/ngst1lt51m9_gyz7qrg2f3nh0000gn/T/tmpcj72jt6v', '--error-file', '/var/folders/lh/ngst1lt51m9_gyz7qrg2f3nh0000gn/T/tmpex4qtr07']
+[2022-03-19 16:19:25,778] {standard_task_runner.py:77} INFO - Job 13: Subtask task_StageToRedshift.Stage_staging_songs
+[2022-03-19 16:19:25,841] {logging_mixin.py:109} INFO - Running <TaskInstance: udac_new_v1_dag.task_StageToRedshift.Stage_staging_songs manual__2022-03-19T08:00:42.228805+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-03-19 16:19:25,905] {taskinstance.py:1429} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=udacity
+AIRFLOW_CTX_DAG_ID=udac_new_v1_dag
+AIRFLOW_CTX_TASK_ID=task_StageToRedshift.Stage_staging_songs
+AIRFLOW_CTX_EXECUTION_DATE=2022-03-19T08:00:42.228805+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-03-19T08:00:42.228805+00:00
+[2022-03-19 16:19:25,906] {stage_redshift.py:75} INFO - Starting to set aws redshift connection
+[2022-03-19 16:19:25,915] {base_aws.py:190} INFO - Credentials retrieved from login
+[2022-03-19 16:19:25,927] {stage_redshift.py:79} INFO - Starting to truncate table, table name: staging_songs!
+[2022-03-19 16:19:25,928] {stage_redshift.py:144} INFO - Starting to execute the truncate_table_sql process
+[2022-03-19 16:19:25,940] {base.py:70} INFO - Using connection to: id: redshift. Host: redshift-cluster-1.cvmsgkpkbsh2.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: ***, extra: {}
+[2022-03-19 16:19:27,547] {dbapi.py:225} INFO - Running statement: 
+        TRUNCATE TABLE public.staging_songs
+        , parameters: None
+[2022-03-19 16:19:28,505] {stage_redshift.py:83} INFO - Starting to copy data from S3 to Redshift table, table name: staging_songs!
+[2022-03-19 16:19:28,511] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-03-19 16:19:28,512] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2022-03-19 16:19:28,513] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2022-03-19 16:19:28,514] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2022-03-19 16:19:28,514] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2022-03-19 16:19:28,515] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-03-19 16:19:28,516] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2022-03-19 16:19:28,516] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2022-03-19 16:19:28,517] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2022-03-19 16:19:28,518] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-03-19 16:19:28,518] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2022-03-19 16:19:28,519] {logging_mixin.py:109} WARNING - /usr/local/anaconda3/envs/***_project/lib/python3.9/site-packages/***/utils/context.py:156 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-03-19 16:19:28,519] {stage_redshift.py:121} INFO - S3_key.format(**context): song_data
+[2022-03-19 16:19:28,520] {stage_redshift.py:125} INFO - Starting to execute the copy_sql_statement process
+[2022-03-19 16:19:28,528] {base.py:70} INFO - Using connection to: id: redshift. Host: redshift-cluster-1.cvmsgkpkbsh2.us-west-2.redshift.amazonaws.com, Port: 5439, Schema: dev, Login: awsuser, Password: ***, extra: {}
+[2022-03-19 16:19:30,386] {dbapi.py:225} INFO - Running statement: 
+        COPY staging_songs
+        FROM 's3://udacity-dend/song_data'
+        ACCESS_KEY_ID 'AKIAUW7BQYXKOEMAW7ES'
+        SECRET_ACCESS_KEY '***'
+        FORMAT AS JSON 'auto'
+        REGION AS 'us-west-2'
+        , parameters: None
+[2022-03-19 16:22:34,522] {taskinstance.py:1272} INFO - Marking task as SUCCESS. dag_id=udac_new_v1_dag, task_id=task_StageToRedshift.Stage_staging_songs, execution_date=20220319T080042, start_date=20220319T081925, end_date=20220319T082234
+[2022-03-19 16:22:34,551] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-03-19 16:22:34,590] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
