@@ -30,9 +30,6 @@ FORMAT_JSON = 's3://udacity-dend/log_json_path.json'
 
 
 # Table of configuration
-stage_tables = {'log_data': 'staging_events',
-                'song_data': 'staging_songs'}
-
 tables_string = \
     '''
 {
