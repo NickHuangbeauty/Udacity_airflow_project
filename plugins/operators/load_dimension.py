@@ -18,8 +18,8 @@ class LoadDimensionOperator(BaseOperator):
     :type sql_statement       str
     :param redshift_schema    Redshift schema: public (default)
     :type redshift_schema     str
-    :param is_truncate_tab    truncate table or not (default is False)
-    :type is_truncate_ta      boolean
+    :param is_truncate_table  truncate table or not (default is False)
+    :type is_truncate_table   boolean
     """
     # Setting the task background color
     # RPG: 128, 189, 158 -> Green
