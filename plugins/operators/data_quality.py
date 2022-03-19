@@ -60,7 +60,14 @@ class DataQualityOperator(BaseOperator):
         self.data_quality_check(redshift_hook)
 
     def execute_query(self, redshift_hook, table_name, condation):
-        # Method 2
+        """
+        Purpose:
+            query all tables data quality results
+        :param redshift_hook: Access redshift by PostgresHook
+        :param table_name: each table name
+        :param condation: each where conditions
+        :return: query result
+        """
         return redshift_hook.get_records(
             f"SELECT COUNT(*) FROM {table_name} WHERE {condation} IS NULL"
         )
