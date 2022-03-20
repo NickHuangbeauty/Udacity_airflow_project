@@ -18,7 +18,13 @@ The source data resides in S3 and needs to be processed in Sparkify's data wareh
 ### Instruction this project
 - Instruction each project files function:
 1. DAG task ```/dags/udac_v1.py```
+
 It's the main task of this project to launch Airflow DAG processing and make sure all ETL pipeline processing.
+
+I used the task group method to launch Airflow DAG which was good for the development data process.
+```python
+from airflow.utils.task_group import TaskGroup
+```
 
 2. Configuration ```./config_file/airflow.cfg```
 Setting all airflow configurations for making sure that is working or not.
