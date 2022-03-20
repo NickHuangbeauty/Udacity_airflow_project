@@ -19,10 +19,10 @@ The source data resides in S3 and needs to be processed in Sparkify's data wareh
 - Instruction each project files function:
 1. DAG task ```/dags/udac_v1.py```
 It's the main task of this project to launch Airflow DAG processing and make sure all ETL pipeline processing.
-<br/>
+
 2. Configuration ```./config_file/airflow.cfg```
 Setting all airflow configurations for making sure that is working or not.
-<br/>
+
 3. Project folders
 ```
 -> /dags
@@ -44,6 +44,7 @@ Setting all airflow configurations for making sure that is working or not.
         -> load_fact.py
         -> stage_redshift.py
 ```
+
 ### DAG execute all processing time
 - It's data from s3 to aws redshift process.
 ![image info](./execute_photo/DAG_Gantt.jpeg)
