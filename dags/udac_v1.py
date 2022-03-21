@@ -163,6 +163,6 @@ with DAG('udac_new_v1_dag',
         task_id='Stop_execution'
     )
 
-    # ETL workflow of Sparkify company
+    # First of whole ETL workflow
     start_operator >> task_group_StageToRedshift >> process_load_fact_operator
     process_load_fact_operator >> task_group_Dimension_table >> run_quality_checks >> end_operator

@@ -1,4 +1,3 @@
-from distutils.util import execute
 import json
 from airflow.models import BaseOperator
 from airflow.providers.postgres.operators.postgres import PostgresHook

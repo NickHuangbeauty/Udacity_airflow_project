@@ -1,8 +1,6 @@
 from airflow.models import BaseOperator
 from airflow.providers.postgres.operators.postgres import PostgresHook
 
-# from helpers.sql_queries import SqlQueries
-
 class LoadFactOperator(BaseOperator):
     """
     Purpose:
